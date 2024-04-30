@@ -1,0 +1,14 @@
+
+resources = static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${pictureFile.path-mapping}
+
+server:
+  port: 10000
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/social_sys?useUnicode=true&characterEncoding=utf-8&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=GMT%2B8 #url
+    username: root
+    password: zmy02284310
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
